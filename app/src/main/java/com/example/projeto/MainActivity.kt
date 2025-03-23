@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
             val peso = pesoEditText.text.toString().trim().toFloatOrNull()
 
             if (altura == null || peso == null) {
-                resultadoTextView.text = "Erro: Insira valores numéricos."
+                resultadoTextView.text = "Erro: Insira valores numericos."
                 return@setOnClickListener
             }
 
