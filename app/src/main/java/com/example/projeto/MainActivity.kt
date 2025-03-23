@@ -11,10 +11,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val alturaEditText = findViewById<EditText>(R.id.editTextNumberDecimal3)
-        val pesoEditText = findViewById<EditText>(R.id.editTextNumberDecimal)
-        val calcularButton = findViewById<Button>(R.id.button2)
-        val resultadoTextView = findViewById<TextView>(R.id.textView2)
+        val alturaEditText = findViewById<EditText>(R.id.editTextAltura)
+        val pesoEditText = findViewById<EditText>(R.id.editTextPeso)
+        val calcularButton = findViewById<Button>(R.id.buttonCalcular)
+        val resultadoTextView = findViewById<TextView>(R.id.textView)
 
         calcularButton.setOnClickListener {
             val altura = alturaEditText.text.toString().trim().toFloatOrNull()
